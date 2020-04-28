@@ -1,0 +1,18 @@
+.side-nav {
+  padding: 20px;
+}
+.side-nav .first {
+  font-size: 24px;
+  text-indent: 10px;
+  background-color: red;
+}
+.side-nav .second {
+  font-size: 18px;
+  text-indent: 30px;
+  background-color: green;
+}
+.side-nav .third {
+  font-size: 12px;
+  text-indent: 50px;
+  background-color: blue;
+}
