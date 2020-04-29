@@ -122,6 +122,8 @@ export default {
     },
 
 ```
+
+```
  created:function(){
      axios.get("/api/weather/index",{
          params:{
@@ -136,7 +138,7 @@ export default {
          console.log(err)
      })
  },
-
+```
 
  -----------------------------------------------------------------
  ##3.2axios拦截器的使用
@@ -294,4 +296,10 @@ vm.items.splice(newLength)
 #8.各组件之间的访问
 ```
  this.$refs.reference1.sonClear()
-9父子传值及值修改,在一个自定义组件中使用v-model
+```
+#9父子传值及值修改,在一个自定义组件中使用v-model
+
+#10es6语法
+
+
+

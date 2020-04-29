@@ -8,19 +8,24 @@ export default {
   components: {},
   props: [],
   data: function() {
-    return {
-
-    };
+    return {};
   },
   created: function() {
     this.say("wmy", "{你好}", "吃饭了吗");
     let s = () => ({ name: "bwf" });
     console.log("s()", s());
-    this.tryMet()
+    this.tryMet();
+    var a = [];
+    for (let i = 0; i < 3; i++) {
+      let i = "abc";
+      console.log(i);
+    }
+
+    // ReferenceError: i is not defined
   },
-  mounted(){
-    let [...arr]  = [1,2,3]
-    console.log('arr',arr);
+  mounted() {
+    let [...arr] = [1, 2, 3];
+    console.log("arr", arr);
   },
   methods: {
     say(name = "bwf", ...word) {
@@ -28,14 +33,12 @@ export default {
     },
     tryMet() {
       try {
-       console.log(eee);
-       console.log('123');
-       
-      } catch(e) {
-       console.log('456');
-       
+        console.log(eee);
+        console.log("123");
+      } catch (e) {
+        console.log("456");
       }
-    },
+    }
   }
 };
 </script>
