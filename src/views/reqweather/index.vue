@@ -23,7 +23,7 @@
 </template>
 <script>
 // import axios from "axios";
-import reqweather from "../../api/juhe.js";
+import api from "../../api/juhe.js";
 export default {
   components: {},
   props: [],
@@ -58,7 +58,7 @@ export default {
   methods: {
     getWeather() {
       let that = this;
-      reqweather({
+      api.reqweather({
         params: {
           cityname: that.cityname
         }

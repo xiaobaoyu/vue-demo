@@ -19,7 +19,7 @@
         玩：
         <input type="checkbox" name='play' value="玩" id='2'>
     </label> -->
-    <div class='test'></div>
+    <!-- <div class='test'></div> -->
 
   </div>
 </template>
@@ -75,14 +75,14 @@ input[type="checkbox"]:checked {
   background-color: #409eff;
 }
 
-.test {
-  margin-left: 20px;
-  height: 7px;
-  width: 3px;
-  border: 1px solid red;
-  border-left: 0;
-  border-top: 0;
-  transform: rotate(45deg);
-  transform-origin: center;
-}
+// .test {
+//   margin-left: 20px;
+//   height: 7px;
+//   width: 3px;
+//   border: 1px solid red;
+//   border-left: 0;
+//   border-top: 0;
+//   transform: rotate(45deg);
+//   transform-origin: center;
+// }
 </style>

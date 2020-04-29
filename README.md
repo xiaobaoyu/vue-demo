@@ -234,10 +234,64 @@ vm.items.splice(newLength)
 
 
 #六es6模块化
+##注意
+###6.1ES6 模块之中，顶层的this指向undefined，即不应该在顶层代码使用this。
+###6.2需要特别注意的是，export命令规定的是对外的接口，必须与模块内部的变量建立一一对应关系。
+    ```
+    // 报错
+    export 1;
 
-es6导入导出的使用，接口导出一个对象
+    // 报错
+    var m = 1;
+    export m;
+    ```
 
-4.怎么实现一个简单的vue.js 
-https://es6.ruanyifeng.com/#docs/array  扩展运算符
 
-5.各组件之间的访问
+    ```
+    // 写法一
+    export var m = 1;
+
+    // 写法二
+    var m = 1;
+    export {m};
+
+    // 写法三
+    var n = 1;
+    export {n as m};
+    ```
+
+###6.3export default命令其实只是输出一个叫做default的变量，所以它后面不能跟变量声明语句。
+###本质上，export default就是输出一个叫做default的变量或方法，然后系统允许你为它取任意名字
+    ```
+    // 正确
+    export var a = 1;
+
+    // 正确
+    var a = 1;
+    export default a;
+
+    // 错误
+    export default var a = 1;
+
+
+    // 正确
+    export default 42;
+
+    // 报错
+    export 42;
+
+
+    ```
+    export var foo = 'bar';
+    setTimeout(() => foo = 'baz', 500);
+    ```
+    上面代码输出变量foo，值为bar，500 毫秒之后变成baz。???
+
+
+
+7.怎么实现一个简单的vue.js  [https://segmentfault.com/a/119000001636510]
+
+#8.各组件之间的访问
+```
+ this.$refs.reference1.sonClear()
+9父子传值及值修改,在一个自定义组件中使用v-model

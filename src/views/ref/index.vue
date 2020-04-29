@@ -1,28 +1,38 @@
 <template>
   <div>
-    ref
-    <input type="text"
-           ref="txtipt">
+    <h3>ref</h3>
+    普通文本款：<input type="text"
+           ref="txtipt" v-model="msg">
     <br>
-    <input type="date">
+    引入的自定义文本框：
+    <ref-input ref="reference1"></ref-input>
+    <ref-input ref="reference2"></ref-input>
+    <ref-input ref="reference3"></ref-input>
     <br>
-
-    <input type="text"
+    日期选择框：<input type="date">
+    <br>
+    挂载日期选择器：<input type="text"
            ref='dateInput'>
-    <ref-input ref="reference"></ref-input>
+    <br>
+    <button @click="clearAll">一键清空</button>
+
   </div>
 </template>
 <script>
 // Pickday is not defined?bwf
 import refInput from "./ref.vue";
 import "pikaday/css/pikaday.css";
+import Pikaday from "pikaday";
 export default {
   components: {
     refInput
   },
   props: [],
   data: function() {
-    return {};
+    return {
+      msg:"",
+      // defineMsg:""
+    };
   },
   created: function() {},
   mounted() {
@@ -53,7 +63,7 @@ export default {
 
     var picker = new Pikaday({
       field: this.$refs.dateInput, //绑定日期插件的input对象
-      format: "YYYY/M/D",
+      format: "YYYY/MM/DD",
       i18n: i18n //对默认的日期进行格式化，包括汉化
     });
 
@@ -62,7 +72,19 @@ export default {
       picker.destroy();
     });
   },
-  methods: {}
+  methods: {
+    clearAll(){
+      this.msg="",
+      // 父组件中调用子组件的方法
+      this.$refs.reference1.sonClear()
+      this.$refs.reference2.sonClear()
+      this.$refs.reference3.sonClear()
+
+      // this.$refs.reference1.inpmsg=""
+      // this.$refs.reference2.inpmsg=""
+      // this.$refs.reference3.inpmsg=""
+    },
+  }
 };
 </script>
 <style>

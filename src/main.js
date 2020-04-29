@@ -8,6 +8,9 @@ import router from './router'
 
 import axios from 'axios'
 import filters from './utils/filter'
+// import fn  from './utils/moduleA'
+
+
 
 import './utils/A'
 import useObj from './utils/use'

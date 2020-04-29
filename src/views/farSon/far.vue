@@ -22,7 +22,7 @@ export default {
   data: function() {
     return {
       userInfo: {
-        name: "xiaoming"
+        name: "bwf"
       },
       msffromson: "",
       inp: ""

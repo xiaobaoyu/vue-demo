@@ -21,14 +21,10 @@ export default {
   created: function() {},
   methods: {
     sendtofar() {
-      console.log(111);
       this.$emit("sendtofarattr", "hello,i am son");
     },
     changeMsg() {
       this.otherInfo.name = "zhangsan";
-    },
-    say() {
-      console.log("say Wmy");
     },
     reset() {
       this.inp1 = "";
