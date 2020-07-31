@@ -1,1 +1,157 @@
-<mxfile host="app.diagrams.net" modified="2020-07-31T08:46:20.621Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" version="13.5.7" etag="GskhU1v8p6PTYU8X6rXy" type="github"><diagram id="JJMnvlMO0YPqU0ymhXdU">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2020-07-31T10:11:21.176Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="E-IkRJQC0zBQYZcRqdWx" version="13.5.7" type="github">
+  <diagram id="JJMnvlMO0YPqU0ymhXdU" name="Page-1">
+    <mxGraphModel dx="1089" dy="1691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-1" value="文件功能" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-87" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-6" target="ha6VEjCnvNa8ykRh6O9I-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-6" value="上传" style="rounded=0;whiteSpace=wrap;html=1;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-230" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="-110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="-120" />
+              <mxPoint x="540" y="-120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-7" value="新建" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="-230" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-11" value="1弹出弹窗（弹窗组件Dialog)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="90" width="144" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-16" value="取消关闭弹窗" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-17" target="ha6VEjCnvNa8ykRh6O9I-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-17" value="确认" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-20" value="获取输入框文件夹名称，请求接口，保存数据" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-22" value="关闭弹窗" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="881" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-30" value="打开弹窗后重新点新建是否关闭？" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="614" y="-220" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-36" value="1调用PoperButton组件，渲染新建类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="469.5" y="-110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-41" target="ha6VEjCnvNa8ykRh6O9I-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-41" value="1.2新建文件夹" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="614" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-43" target="ha6VEjCnvNa8ykRh6O9I-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-43" value="1.1 新建在线文档" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="270" y="10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-48" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-45" target="ha6VEjCnvNa8ykRh6O9I-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-45" value="弹出弹窗（确认是弹窗组件还是前端新建一个页面）" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="260" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-47">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350.5" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-47" value="tap:文档，表格，幻灯片" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410.5" y="260" as="sourcePoint" />
+            <mxPoint x="380.5" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-49" value="切换tap,传入文档类型，项目id,请求接口对应列表" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-53" value="列表数组中第一项总是渲染新建空白文稿项，点击新建空白文稿，调用端的wps文档进行预览和编辑" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="310" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-71" value="" style="endArrow=classic;html=1;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="-240" as="sourcePoint" />
+            <mxPoint x="230" y="-240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="-260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-74" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="-280" as="sourcePoint" />
+            <mxPoint x="490" y="-240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-76" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="-190" as="sourcePoint" />
+            <mxPoint x="610" y="-210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="590" y="-210" />
+              <mxPoint x="600" y="-210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-78" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="-50" as="sourcePoint" />
+            <mxPoint x="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-79" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ha6VEjCnvNa8ykRh6O9I-36">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="439" y="-56" as="sourcePoint" />
+            <mxPoint x="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-81" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="140" as="sourcePoint" />
+            <mxPoint x="600" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-83" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="720" y="150" as="sourcePoint" />
+            <mxPoint x="746" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="710" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-84" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="100" as="sourcePoint" />
+            <mxPoint x="940" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="920" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ha6VEjCnvNa8ykRh6O9I-85" value="调用上传的接口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-140" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
